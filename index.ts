@@ -1,9 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
-const absPath = path.resolve('.');
-
-console.log('path: ', absPath);
+const absPath = path.resolve('node_modules', 'react-autocode');
+console.log(absPath);
 
 function getPathAndFileName(fullPath: string): [string, string] {
   return [path.dirname(fullPath), path.win32.basename(fullPath)];

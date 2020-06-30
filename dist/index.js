@@ -5,8 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
-var absPath = path_1.default.resolve('.');
-console.log('path: ', absPath);
+var absPath = path_1.default.resolve('node_modules', 'react-autocode');
+console.log(absPath);
 function getPathAndFileName(fullPath) {
     return [path_1.default.dirname(fullPath), path_1.default.win32.basename(fullPath)];
 }
