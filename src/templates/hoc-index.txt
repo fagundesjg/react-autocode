@@ -1,0 +1,3 @@
+import { withMyPage } from './withMyPage';
+
+export { withMyPage };

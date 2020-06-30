@@ -1,0 +1,13 @@
+import React from 'react'
+
+import { IWithMyPage } from '../types';
+
+const withMyPage = (WrappedComponent: React.ElementType) => {
+    const WithMyPageHOC = (props: IWithMyPage) => {
+        return <WrappedComponent {...props} />
+    }
+
+    return WithMyPageHOC;
+}
+
+export { withMyPage };

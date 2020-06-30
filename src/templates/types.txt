@@ -1,0 +1,5 @@
+interface ICommon { };
+
+export interface IWithMyPage extends ICommon { };
+
+export interface IMyPage extends ICommon { };
