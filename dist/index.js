@@ -5,16 +5,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
+var absPath = path_1.default.resolve('.');
+console.log('path: ', absPath);
 function getPathAndFileName(fullPath) {
     return [path_1.default.dirname(fullPath), path_1.default.win32.basename(fullPath)];
 }
 function generate_hoc(fileDir) {
     var _a = getPathAndFileName(fileDir), baseDir = _a[0], fileName = _a[1];
-    var indexFile = fs_1.default.readFileSync('./templates/hoc-index.txt', {
+    var indexFile = fs_1.default.readFileSync(absPath + "/templates/hoc-index.txt", {
         encoding: 'utf-8',
         flag: 'r',
     });
-    var file = fs_1.default.readFileSync('./templates/hoc.txt', {
+    var file = fs_1.default.readFileSync(absPath + "/templates/hoc.txt", {
         encoding: 'utf-8',
         flag: 'r',
     });
@@ -34,19 +36,19 @@ function generate_hoc(fileDir) {
 }
 function generate_page(fileDir) {
     var _a = getPathAndFileName(fileDir), baseDir = _a[0], fileName = _a[1];
-    var file = fs_1.default.readFileSync('./templates/page.txt', {
+    var file = fs_1.default.readFileSync(absPath + "/templates/page.txt", {
         encoding: 'utf-8',
         flag: 'r',
     });
-    var indexFile = fs_1.default.readFileSync('./templates/page-index.txt', {
+    var indexFile = fs_1.default.readFileSync(absPath + "/templates/page-index.txt", {
         encoding: 'utf-8',
         flag: 'r',
     });
-    var typesFile = fs_1.default.readFileSync('./templates/types.txt', {
+    var typesFile = fs_1.default.readFileSync(absPath + "/templates/types.txt", {
         encoding: 'utf-8',
         flag: 'r',
     });
-    var stylesFile = fs_1.default.readFileSync('./templates/styles.txt', {
+    var stylesFile = fs_1.default.readFileSync(absPath + "/templates/styles.txt", {
         encoding: 'utf-8',
         flag: 'r',
     });
