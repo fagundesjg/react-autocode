@@ -7,11 +7,11 @@ function getPathAndFileName(fullPath: string): [string, string] {
 
 function generate_hoc(fileDir: string) {
   const [baseDir, fileName] = getPathAndFileName(fileDir);
-  const indexFile = fs.readFileSync('./src/templates/hoc-index.txt', {
+  const indexFile = fs.readFileSync('./templates/hoc-index.txt', {
     encoding: 'utf-8',
     flag: 'r',
   });
-  const file = fs.readFileSync('./src/templates/hoc.txt', {
+  const file = fs.readFileSync('./templates/hoc.txt', {
     encoding: 'utf-8',
     flag: 'r',
   });
@@ -41,19 +41,19 @@ function generate_hoc(fileDir: string) {
 
 function generate_page(fileDir: string) {
   const [baseDir, fileName] = getPathAndFileName(fileDir);
-  const file = fs.readFileSync('./src/templates/page.txt', {
+  const file = fs.readFileSync('./templates/page.txt', {
     encoding: 'utf-8',
     flag: 'r',
   });
-  const indexFile = fs.readFileSync('./src/templates/page-index.txt', {
+  const indexFile = fs.readFileSync('./templates/page-index.txt', {
     encoding: 'utf-8',
     flag: 'r',
   });
-  const typesFile = fs.readFileSync('./src/templates/types.txt', {
+  const typesFile = fs.readFileSync('./templates/types.txt', {
     encoding: 'utf-8',
     flag: 'r',
   });
-  const stylesFile = fs.readFileSync('./src/templates/styles.txt', {
+  const stylesFile = fs.readFileSync('./templates/styles.txt', {
     encoding: 'utf-8',
     flag: 'r',
   });

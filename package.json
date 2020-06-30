@@ -1,6 +1,6 @@
 {
-  "name": "autocode",
-  "version": "1.0.0",
+  "name": "react-autocode",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -11,5 +11,21 @@
   },
   "dependencies": {
     "@types/node": "^14.0.14"
-  }
+  },
+  "description": "Package to generate blank template of react with hocs files using typescript.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fagundesjg/react-autocode.git"
+  },
+  "keywords": [
+    "React",
+    "ReactJS",
+    "Typescript",
+    "Template"
+  ],
+  "author": "José Fagundes",
+  "bugs": {
+    "url": "https://github.com/fagundesjg/react-autocode/issues"
+  },
+  "homepage": "https://github.com/fagundesjg/react-autocode#readme"
 }
